@@ -1,0 +1,51 @@
+//Nodemon
+para usar nodemon solo hay q agregar npx nodemon y la ubicacion
+en window se le agrega el npx en mac no
+//npx nodemon carpeta/archivo.js
+
+funcionamiento
+este te ayudara a no tener que repetir todo el codigo que ya as echo ejecutando o agregando a la consola
+$env:NOMBRE="Cesar"
+$env:WEB="miweb.com"
+node carpeta/archivo.js
+//para no hacer siempre esto y menos en condios mas extenso solo basta con poner npx nodemon y ya este usara todo lo ejecutado en el codigo
+al hacer algun cambio en el proyecto nodemon se dara cuenta y se actualizara
+
+
+//PM2
+para acceder npx pm2 start carpeta/archivo.js
+Start and Daemonize any application:
+//npx pm2 start app.js
+
+Load Balance 4 instances of api.js:
+//npx pm2 start api.js -i 4
+
+Monitor in production:
+//npx pm2 monitor
+
+Make pm2 auto-boot at server restart:
+//npx pm2 startup
+
+
+...........
+..RESUMEN..
+...........
+
+Desarrollo
+Nodemon. Demons en linux, puedes tener procesos que ves ejecutandose
+nodemon + archivo al que quiero acceder detecta cambios, y ejecuta automaticamente el código.
+
+sudo npm install -g nodemon
+
+Nodemon
+Producción
+
+sudo npm install -g pm2
+
+PM2 Es un demonio administrador de procesos que me puede ayudar a administrar y mantener mi aplicación 24/7.
+
+Voy a poner monitorizar el código para saber si algo se rompe.
+Me permite ver dashboards de mi código, puedo ver que está corriendo.
+Puedo ver el rendimiento de mi cpu
+Con: pm2 stop + id —> me detiene el proceso que está en ejecución con ese ID.
+PM2
